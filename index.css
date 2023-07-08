@@ -1,0 +1,123 @@
+@import url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* primary colors */
+    --pri-light-red: hsl(0, 100%, 67%);
+    --pri-orangey-yellow: hsl(39, 100%, 56%);
+    --pri-green-teal: hsl(166, 100%, 37%);
+    --pri-cobalt-blue: hsl(234, 85%, 45%);
+
+    /* gradient colors */
+    --gra-light-slate-blue-bg: hsl(252, 100%, 67%);
+    --gra-light-royal-blue-bg: hsl(241, 81%, 54%);
+    --gra-violet-blue-c: hsla(256, 72%, 46%, 1);
+    --gra-persian-blue-c: hsla(241, 72%, 46%, 0);
+
+    /* neutral colors */
+    --neu-white: hsl(0, 0%, 100%);
+    --neu-pale-blue: hsl(221, 100%, 96%);
+    --neu-light-lavender: hsl(241, 100%, 89%);
+    --neu-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--neu-white);
+}
+
+main {
+    margin-bottom: 2em;
+}
+
+.result-cont {
+    background-image: linear-gradient(var(--gra-light-slate-blue-bg) 46%, var(--gra-light-royal-blue-bg));
+    border-radius: 0 0 2em 2em;
+    box-sizing: border-box;
+    min-width: 100vw;
+    display: grid;
+    place-items: center;
+    padding: 3em 1em;
+    margin: 0;
+    display: block;
+}
+
+.result {
+    width: min(70%, 1100px);
+    /* margin: auto; */
+    border: 2px solid pink;
+    display: grid;
+    place-items: center;
+    color: var(--neu-white);
+    padding: 1em;
+}
+
+.result > * , .summary > *{
+    margin-bottom: 1.5em;
+}
+
+.re-text {
+    font-weight: 700;
+    color: var(--neu-light-lavender);
+}
+
+.result .circle {
+    --gra-violet-blue-c: hsla(256, 72%, 56%, 1);
+    --gra-light-slate-blue-bg: hsla(252, 100%, 67%, .2);
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    color: var(--neu-light-lavender);
+    background-image: linear-gradient( var(--gra-violet-blue-c), var(--gra-light-slate-blue-bg));
+}
+
+.circle span {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: var(--neu-white);
+    margin-bottom: .2em;
+}
+
+.result h3+p {
+    color: var(--neu-light-lavender);
+}
+
+.summary {
+    width: clamp(350px, 50%, 1100px);
+    margin: auto;
+    border: 2px solid pink;
+    margin-top: 1.5em;
+    padding: 1em;
+}
+
+.summary h3 {
+    color: var(--neu-dark-gray-blue);
+}
+
+.summary div {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.summary a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
