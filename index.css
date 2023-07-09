@@ -36,28 +36,24 @@ main {
 }
 
 .result-cont {
-    background-image: linear-gradient(var(--gra-light-slate-blue-bg) 46%, var(--gra-light-royal-blue-bg));
-    border-radius: 0 0 2em 2em;
-    box-sizing: border-box;
-    min-width: 100vw;
+    background-image: linear-gradient(var(--gra-light-slate-blue-bg) 50%, var(--gra-light-royal-blue-bg));
     display: grid;
-    place-items: center;
-    padding: 3em 1em;
-    margin: 0;
-    display: block;
+    justify-content: center;
+    padding: 2em;
+    border-radius: 0 0 2em 2em;
 }
 
 .result {
-    width: min(70%, 1100px);
-    /* margin: auto; */
+    padding: .5em;
+    max-width: 1100px;
     border: 2px solid pink;
+    color: var(--neu-white);
     display: grid;
     place-items: center;
-    color: var(--neu-white);
-    padding: 1em;
+    /* word-wrap: balance; */
 }
 
-.result > * , .summary > *{
+.result > * , .summary > * {
     margin-bottom: 1.5em;
 }
 
@@ -69,11 +65,10 @@ main {
 .result .circle {
     --gra-violet-blue-c: hsla(256, 72%, 56%, 1);
     --gra-light-slate-blue-bg: hsla(252, 100%, 67%, .2);
-    display: block;
+    /* display: block; */
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    text-align: center;
     display: grid;
     place-content: center;
     align-items: center;
@@ -90,6 +85,7 @@ main {
 
 .result h3+p {
     color: var(--neu-light-lavender);
+    text-align: center;
 }
 
 .summary {
@@ -112,6 +108,26 @@ main {
     border-radius: .5em;
 }
 
+.reaction {
+    background-color: var(--pri-light-red);
+    color: white;
+}
+
+.memory {
+    background-color: var(--pri-orangey-yellow);
+    color: white;
+}
+
+.verbal {
+    background-color: var(--pri-green-teal);
+    color: white;
+}
+
+.visual {
+    background-color: var(--pri-cobalt-blue);
+    color: white;
+}
+
 .summary a {
     text-align: center;
     display: block;
@@ -120,4 +136,4 @@ main {
 
 footer {
     text-align: center;
-}
+} 
