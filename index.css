@@ -33,6 +33,7 @@ body {
 
 main {
     margin-bottom: 2em;
+    border: 2px solid blue;
 }
 
 .result-cont {
@@ -41,6 +42,7 @@ main {
     justify-content: center;
     padding: 2em;
     border-radius: 0 0 2em 2em;
+    border: 2px solid pink;
 }
 
 .result {
@@ -89,8 +91,8 @@ main {
 }
 
 .summary {
-    width: clamp(350px, 50%, 1100px);
-    margin: auto;
+    max-width: 11000px;
+    /* margin: auto; */
     border: 2px solid pink;
     margin-top: 1.5em;
     padding: 1em;
@@ -103,37 +105,84 @@ main {
 .summary div {
     display: flex;
     justify-content: space-between;
-    border: 2px solid;
+    /* border: 2px solid; */
     padding: 1em;
     border-radius: .5em;
 }
 
 .reaction {
+    --pri-light-red: hsla(0, 100%, 67%, .1);
     background-color: var(--pri-light-red);
-    color: white;
+    color: hsl(0, 100%, 67%);
 }
 
 .memory {
+    --pri-orangey-yellow: hsla(39, 100%, 56%, .1);
     background-color: var(--pri-orangey-yellow);
-    color: white;
+    color: hsl(39, 100%, 56%);
 }
 
 .verbal {
+    --pri-green-teal: hsla(166, 100%, 37%, .1);
     background-color: var(--pri-green-teal);
-    color: white;
+    color: hsl(166, 100%, 37%);
 }
 
 .visual {
+    --pri-cobalt-blue: hsla(234, 85%, 45%, .1);
     background-color: var(--pri-cobalt-blue);
-    color: white;
+    color: hsl(234, 85%, 45%);
 }
 
 .summary a {
     text-align: center;
     display: block;
+    max-width: 250px;
+    margin: auto;
     text-decoration: none;
+    color: var(--neu-pale-blue);
+    padding: .7em;
+    background-color: var(--neu-dark-gray-blue);
+    border-radius: 1.5em;
+    transition: all 1.3s ease-in-out;
 }
+
+.summary a:is(:hover, :active) {
+    background-image: linear-gradient(var(--gra-light-slate-blue-bg) 50%, var(--gra-light-royal-blue-bg));
+    letter-spacing: .2em;
+} 
 
 footer {
     text-align: center;
 } 
+
+@media(min-width: 840px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    main{
+        display: grid;
+        width: min-content;
+        grid-template-columns: repeat(2, minmax(400px, 600px));
+        grid-auto-rows: 500px;
+        justify-content: center;
+        align-content: center;
+        border-radius: 2em;
+    }
+
+    .result-cont {
+        border-radius: 2em 0 2em 2em;
+    }
+
+    .summary {
+        border-radius: 0 2em 2em 0;
+    }
+
+    .summary, .result-cont {
+        margin: 0;
+    }
+}
