@@ -33,7 +33,6 @@ body {
 
 main {
     margin-bottom: 2em;
-    /* border: 2px solid blue; */
 }
 
 .result-cont {
@@ -42,17 +41,14 @@ main {
     justify-content: center;
     padding: 2em;
     border-radius: 0 0 2em 2em;
-    /* border: 2px solid pink; */
 }
 
 .result {
     padding: .5em;
     max-width: 1500px;
-    /* border: 2px solid pink; */
     color: var(--neu-white);
     display: grid;
     place-items: center;
-    /* word-wrap: balance; */
 }
 
 .result > * , .summary > * {
@@ -67,7 +63,6 @@ main {
 .result .circle {
     --gra-violet-blue-c: hsla(256, 72%, 56%, 1);
     --gra-light-slate-blue-bg: hsla(252, 100%, 67%, .2);
-    /* display: block; */
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -92,8 +87,6 @@ main {
 
 .summary {
     max-width: 1500px;
-    /* margin: auto; */
-    /* border: 2px solid pink; */
     margin-top: 1.5em;
     padding: 1em;
 }
@@ -105,7 +98,6 @@ main {
 .summary div {
     display: flex;
     justify-content: space-between;
-    /* border: 2px solid; */
     padding: 1em;
     border-radius: .5em;
 }
@@ -120,7 +112,6 @@ main {
 }
 
 .asst-text {
-    /* background-color: yellow; */
     opacity: .5;
 }
 
@@ -170,6 +161,9 @@ footer {
     text-align: center;
 } 
 
+
+/*  TABLET SCREEN SIZE */
+
 @media(min-width: 840px) {
     body {
         display: flex;
@@ -202,18 +196,21 @@ footer {
     }
 }
 
+/* LAPTOP SCREEN SIZE */
 @media(min-width:1440px) {
     body {
         font-size: 19.5px;
     }
 }
 
+/* LARGE MONITOR SCREEN SIZE */
 @media(min-width:2500px) {
     
     body {
         font-size: calc(1em + .7vw);
     }
-    main{
+
+    main {
         width: max-content;
         grid-template-columns: repeat(2, minmax(700px, 1fr));
         grid-auto-rows: 800px;
@@ -225,8 +222,7 @@ footer {
     }
 
     .summary > * {
-    margin-bottom: 1.1em;
+        margin-bottom: 1.1em;
     }
-
-   
+ 
 }

@@ -27,9 +27,8 @@ Users should be able to:
 
 ### Links
 
-<!-- remeber to input links here -->
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Results Summary Challenge](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/LENI4C)
+- Live Site URL: [Results Summary Challenge](https://lenic-result.netlify.app)
 
 ## My process
 
@@ -43,9 +42,9 @@ Users should be able to:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- I intend to continue to practice more CSS and get even better at it, and after having more peak fun with it i'll delve into the beautiful world that one is able to create with the knowledge of JavaScript.
 
 ## Author
 
-- Website - [LENI4C](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Result Summary Page](https://leni4c-result.netlify.app)
+- Frontend Mentor - [@LENI4C](https://www.frontendmentor.io/profile/LENI4C)
